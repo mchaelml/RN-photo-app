@@ -1,0 +1,59 @@
+{
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    /* Language and Environment */
+    "target": "ES2020" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */ /* Specify a set of bundled library declaration files that describe the target runtime environment. */,
+    "jsx": "react-native" /* Specify what JSX code is generated. */,
+    /* Modules */
+    "module": "NodeNext" /* Specify what module code is generated. */,
+
+    "moduleResolution": "nodenext" /* Specify how TypeScript looks up a file from a given module specifier. */,
+
+    "resolveJsonModule": true /* Enable importing .json files */,
+    /* JavaScript Support */
+    "allowJs": true /* Allow JavaScript files to be a part of your program. Use the `checkJS` option to get errors from these files. */,
+
+    "noEmit": true /* Disable emitting files from a compilation. */,
+
+    "isolatedModules": true /* Transpile each file as a separate module (similar to 'ts.transpileModule'). */,
+    /* Interop Constraints */
+    "allowSyntheticDefaultImports": true /* Allow 'import x from y' when a module doesn't have a default export. */,
+    "esModuleInterop": true /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables `allowSyntheticDefaultImports` for type compatibility. */,
+
+    "forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
+
+    /* Type Checking */
+    "strict": true /* Enable all strict type-checking options. */,
+
+    "skipLibCheck": true /* Skip type checking all .d.ts files. */,
+
+    /* Source Map Options */
+
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "@assets/": ["./src/assets"],
+      "@components": ["./src/components"],
+      "@components/*": ["./src/components/*"],
+      "@navigators/*": ["./src/navigators/*"],
+      "@hooks": ["./src/hooks"],
+      "@utils": ["./src/utils"],
+      "@types": ["./src/types"],
+      "@store/*": ["./src/store/*"],
+      "@providers/*": ["./src/providers/*"],
+      "@constants/*": ["./src/constants/*"],
+      "@src/*": ["./src/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "*.ts", "*.tsx", "types"],
+  "exclude": ["metro.config.js", "jest.config.js", "node_modules"]
+}
